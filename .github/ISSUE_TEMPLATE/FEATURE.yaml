@@ -1,0 +1,34 @@
+name: Feature Request
+description: Request a new feature
+title: ""
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your ideas how to improve this project!
+  - type: textarea
+    id: what
+    attributes:
+      label: WHAT
+      description: describe the desired feature and how it should behave. This should include a _Definition of Done_.
+      placeholder: I got an HTTP Error Code that I think is wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: WHY
+      description: outline the motivation why it's desired and the impact if the feature is _not_ implemented.
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: HOW
+      description: Outline a solution proposal
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Please provide additional context to this request.

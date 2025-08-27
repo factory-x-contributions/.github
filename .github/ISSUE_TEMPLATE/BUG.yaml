@@ -1,0 +1,36 @@
+name: Bug Report
+description: File a bug report.
+title: ""
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this Bug.
+  - type: textarea
+    id: describe
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: I got an HTTP Error Code that I think is wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: To Reproduce
+      description: How can the maintainers reproduce this behavior?
+      placeholder: 1. Create a Resource. 2. Get the Resource. 3. Observe boom.
+    validations:
+      required: true
+  - type: textarea
+    id: material
+    attributes:
+      label: Logs/Screenshots
+      description: Please leave logs/screenshots if you have them
+  - type: textarea
+    id: impl
+    attributes:
+      label: Possible implementation
+      description: You already know the root cause of the erroneous state and how to fix it? Feel free to share your thoughts.
+
